@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--h5设备窗口-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <!--避免IE，使用兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--删除苹果默认的工具栏和菜单栏-->
+    <meta name='apple-mobile-web-app-capable' content="yes">
+    <!--启用360浏览器的极速模式-->
+    <meta name="renderer" content="webkit">
+    <!--uc强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <!--QQ强制竖屏-->
+    <meta name="x5--orientatio" content="portrait">
+    <!--uc强制全屏-->
+    <meta name="full-screen" content="true">
+    <!--window phone 点击无高光-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="./styles/intital.css">
+    <title>进博会展位信息</title>
+</head>
+<body>
+<header class="head">
+    <a onclick="test()" class="navBtn"></a>
+    <span>Aksa Jenerator Sanayi A.S. Aksa Jenerator</span>
+</header>
+<section class="body noPadding">
+    <h2 class="title">
+        展商信息
+    </h2>
+    <div class="basicInfor">
+        <div class="itemInfor">
+            <div class="label">展商名称:</div>
+            <div class="content">ATP(ATA TECHNOLOGY PLATFORMAS)</div>
+        </div>
+        <div class="itemInfor">
+            <div class="label">国别/地区:</div>
+            <div class="content">土耳其</div>
+        </div>
+        <div class="itemInfor">
+            <div class="label">展位编号:</div>
+            <div class="content">3A1-002(001)</div>
+        </div>
+        <div class="itemInfor">
+            <div class="label">企业ID:</div>
+            <div class="content">Z201807231078</div>
+        </div>
+
+
+
+    </div>
+
+    <h2 class="title">
+        展品信息
+    </h2>
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th> <div>展品中文名称</div> </th>
+                <th><div>展品英文名称</div></th>
+                <th ><div>数量</div></th>
+                <th><div>重量</div></th>
+                <th><div>原产国家</div></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>ATP</td>
+                <td>ATA TECHNOLOGY PLATFORMS</td>
+                <td>1</td>
+                <td>650.8Kg</td>
+                <td>土耳其</td>
+
+            </tr>
+            <tr>
+                <td>ATP500</td>
+                <td>ATA TECHNOLOGY PLATFORMS 500</td>
+                <td>1</td>
+                <td>711.2Kg</td>
+                <td>土耳其</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+
+</body>
+<script src="./js/adapter.js"></script>
+<script>
+    function test(){
+        window.history.back(-1);
+    }
+</script>
+</html>

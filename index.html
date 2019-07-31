@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--h5设备窗口-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <!--避免IE，使用兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--删除苹果默认的工具栏和菜单栏-->
+    <meta name='apple-mobile-web-app-capable' content="yes">
+    <!--启用360浏览器的极速模式-->
+    <meta name="renderer" content="webkit">
+    <!--uc强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <!--QQ强制竖屏-->
+    <meta name="x5--orientatio" content="portrait">
+    <!--uc强制全屏-->
+    <meta name="full-screen" content="true">
+    <!--window phone 点击无高光-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="./styles/intital.css">
+    <title>进博会展位信息</title>
+</head>
+<body>
+<header class="head">
+    <span>3A1-002</span>
+</header>
+<section class="body">
+    <div class="exhibitor">
+        <h2>Aksa Jenerator Sanayi A.S. Aksa Jenerator </h2>
+        <div class="content">
+            <p>
+                国别/地区:<span>土耳其</span><br>
+                展位编号:<span>3A1-002(001)</span>
+            </p>
+            <a href="#"  class="btn btn-primary" onclick="modalShow()">查看</a>
+        </div>
+
+
+    </div>
+    <div class="exhibitor">
+        <h2>Aksa Jenerator Sanayi A.S.  </h2>
+        <div class="content">
+            <p>
+                国别/地区:<span>土耳其</span><br>
+                展位编号:<span>3A1-002(001)</span>
+            </p>
+            <a href="./detail.html"  class="btn btn-primary">查看</a>
+        </div>
+
+
+    </div>
+    <div class="exhibitor">
+        <h2>Aksa Jenerator Sanayi A.S. Aksa </h2>
+        <div class="content">
+            <p>
+                国别/地区:<span>土耳其</span><br>
+                展位编号:<span>3A1-002(001)</span>
+            </p>
+            <a href="#"  class="btn btn-primary">查看</a>
+        </div>
+
+
+    </div>
+    <div class="exhibitor">
+        <h2>Aksa Jenerator Sanayi A.S. Aksa Jenerator </h2>
+        <div class="content">
+            <p>
+                国别/地区:<span>土耳其</span><br>
+                展位编号:<span>3A1-002(001)</span>
+            </p>
+            <a href="#"  class="btn btn-primary">查看</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<div class="login-modal">
+    <div class="login ">
+        <a href="#" class="closeBtn" onclick="modalClose()">×</a>
+        <h2><span>用户登录</span></h2>
+        <div class="inputItem">
+
+            <span>口令：</span>
+            <input type="password" placeholder="请输入口令">
+        </div>
+        <div class="loginBtn">
+            <a href="#" class="btn btn-primary">登录</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/adapter.js"></script>
+<script>
+    function modalShow(){
+        var bg=document.querySelector('.login-modal');
+        var login=document.querySelector('.login ');
+
+        bg.className='login-modal fadeIn';
+        login.className='login lightSpeedIn';
+
+    }
+    function modalClose(){
+        var bg=document.querySelector('.login-modal');
+        var login=document.querySelector('.login ');
+        // bg.style.transform='translate3d(0,0,0)'
+        login.className='login lightSpeedOut';
+        bg.className='login-modal fadeOut';
+
+
+    }
+</script>
+</html>
